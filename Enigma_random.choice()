@@ -1,0 +1,30 @@
+import random
+string=input("enter:")
+
+def Turing(string):
+ 
+ rotor1=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+ rotor2=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+ rotor3=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+  
+ for i in string:
+  char1=list[i]
+
+  char2=random.choice(rotor1)
+  char1=char2
+
+  for j in range(26):
+   char3=random.choice(rotor2)
+   char2=char3
+
+   for k in range(26):
+    char4=random.choice(rotor3)
+    char4=char3
+    string1+=char4
+    return string1
+
+ string=string1
+ 
+print("output:",Turing(string))
+ 
+
